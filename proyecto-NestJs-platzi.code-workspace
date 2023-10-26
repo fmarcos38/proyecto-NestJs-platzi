@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "proyecto-NestJs-platzi",
+			"path": "."
+		},
+		{
+			"name": "src",
+			"path": "../../fundamentos-nestjs-1-step/src"
+		}
+	],
+	"settings": {}
+}
