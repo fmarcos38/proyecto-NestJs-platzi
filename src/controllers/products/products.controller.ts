@@ -12,7 +12,9 @@ import {
 } from '@nestjs/common';
 import { ProductsService } from 'src/services/products/products.service';
 //importo Mi pipe
-//import { ParseIntPipe } from 'src/common/parse-int.pipe';
+/*import { ParseIntPipe } from 'src/common/parse-int.pipe';*/
+//utilizacion de los DTOs
+import { CreateProductDto, UpdateProductDto } from 'src/dtos/products.dtos';
 
 /*
     NOTA: el orden de las RUTAS es IMPORTANTE 1ro las NO DINAMICAS (osea q solo son url SIN parametros).
@@ -67,14 +69,15 @@ export class ProductsController {
   }
 
   //CREAR prod
+  //Aquí utilizo el DTO
   @Post()
-  create(@Body() payload: any) {
+  create(@Body() payload: CreateProductDto) {
     return this.productsServices.createP(payload);
   }
 
   //actualizar
   @Put(':id')
-  update(@Param('id') id: number, @Body() payload: any) {
+  update(@Param('id') id: number, @Body() payload: UpdateProductDto) {
     return this.productsServices.update(id, payload);
   }
 
