@@ -1,7 +1,9 @@
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo_text.svg" width="320" alt="Nest Logo" /></a>
 </p>
-
+<p align="center">
+  <b>Curso de Backend con Nest Js de Platzi - Realización de un CRUD - Con datos en Memomoria -</b>
+</p>
 [circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
 [circleci-url]: https://circleci.com/gh/nestjs/nest
 
